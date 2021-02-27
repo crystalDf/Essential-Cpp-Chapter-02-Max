@@ -49,7 +49,7 @@ std::string Max(const std::string ia[], const int size)
 }
 
 template<typename T>
-T MaxT(const T val1, T val2)
+T MaxT(const T& val1, const T& val2)
 {
     return val1 > val2 ? val1 : val2;
 }
@@ -80,7 +80,7 @@ int main()
 
     std::cout << MaxT(1, 2) << std::endl;
     std::cout << MaxT(3.0f, 4.0f) << std::endl;
-    std::cout << MaxT("a", "b") << std::endl;
+    std::cout << MaxT(std::string("a"), std::string("b")) << std::endl;
     std::cout << MaxT(std::vector<int> { 1, 2 }) << std::endl;
     std::cout << MaxT(std::vector<float> { 3.0f, 4.0f }) << std::endl;
     std::cout << MaxT(std::vector<std::string> { "a", "b" }) << std::endl;
