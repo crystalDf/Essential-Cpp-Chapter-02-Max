@@ -80,7 +80,7 @@ int main()
 
     std::cout << MaxT(1, 2) << std::endl;
     std::cout << MaxT(3.0f, 4.0f) << std::endl;
-    std::cout << MaxT(std::string("a"), std::string("b")) << std::endl;
+    std::cout << MaxT(std::string { "a" }, std::string { "b" }) << std::endl;
     std::cout << MaxT(std::vector<int> { 1, 2 }) << std::endl;
     std::cout << MaxT(std::vector<float> { 3.0f, 4.0f }) << std::endl;
     std::cout << MaxT(std::vector<std::string> { "a", "b" }) << std::endl;
